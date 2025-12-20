@@ -1,0 +1,114 @@
+{
+  "models": [
+    {
+      "id": "model-special-order",
+      "name": "SpecialOrderModel",
+      "generator": "random(edge_coverage(100))",
+      "startElementId": "",
+      "vertices": [
+        {
+          "id": "v-start",
+          "name": "v_Start",
+          "properties": {
+            "x": 200,
+            "y": 200
+          }
+        },
+        {
+          "id": "v-request-created",
+          "name": "v_RequestCreated",
+          "properties": {
+            "x": 450,
+            "y": 200
+          }
+        },
+        {
+          "id": "v-approved",
+          "name": "v_Approved",
+          "properties": {
+            "x": 700,
+            "y": 140
+          }
+        },
+        {
+          "id": "v-rejected",
+          "name": "v_Rejected",
+          "properties": {
+            "x": 700,
+            "y": 260
+          }
+        },
+        {
+          "id": "v-ordered-supplier",
+          "name": "v_OrderedFromSupplier",
+          "properties": {
+            "x": 950,
+            "y": 140
+          }
+        },
+        {
+          "id": "v-delivered-store",
+          "name": "v_DeliveredToStore",
+          "properties": {
+            "x": 1200,
+            "y": 140
+          }
+        },
+        {
+          "id": "v-picked-up",
+          "name": "v_PickedUpByCustomer",
+          "properties": {
+            "x": 1450,
+            "y": 200
+          }
+        }
+      ],
+      "edges": [
+        {
+          "id": "e-create-request",
+          "name": "e_CreateRequest",
+          "sourceVertexId": "v-start",
+          "targetVertexId": "v-request-created"
+        },
+        {
+          "id": "e-approve-request",
+          "name": "e_ApproveRequest",
+          "sourceVertexId": "v-request-created",
+          "targetVertexId": "v-approved"
+        },
+        {
+          "id": "e-reject-request",
+          "name": "e_RejectRequest",
+          "sourceVertexId": "v-request-created",
+          "targetVertexId": "v-rejected"
+        },
+        {
+          "id": "e-order-supplier",
+          "name": "e_OrderSupplier",
+          "sourceVertexId": "v-approved",
+          "targetVertexId": "v-ordered-supplier"
+        },
+        {
+          "id": "e-receive-from-supplier",
+          "name": "e_ReceiveFromSupplier",
+          "sourceVertexId": "v-ordered-supplier",
+          "targetVertexId": "v-delivered-store"
+        },
+        {
+          "id": "e-notify-customer",
+          "name": "e_NotifyCustomer",
+          "sourceVertexId": "v-delivered-store",
+          "targetVertexId": "v-picked-up"
+        },
+        {
+          "id": "e-pickup",
+          "name": "e_Pickup",
+          "sourceVertexId": "v-picked-up",
+          "targetVertexId": "v-start"
+        }
+      ]
+    }
+  ],
+  "selectedModelIndex": 0,
+  "selectedElementId": ""
+}
