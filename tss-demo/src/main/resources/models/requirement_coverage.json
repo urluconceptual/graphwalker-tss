@@ -3,7 +3,6 @@
     {
       "id": "model-special-order",
       "name": "SpecialOrderModel",
-      "generator": "random(edge_coverage(100))",
       "startElementId": "v-start",
       "vertices": [
         {
@@ -19,7 +18,8 @@
           "name": "v_RequestCreated",
           "properties": {
             "x": 450,
-            "y": 200
+            "y": 200,
+            "requirements": "REQ-001"
           }
         },
         {
@@ -27,7 +27,8 @@
           "name": "v_Approved",
           "properties": {
             "x": 700,
-            "y": 140
+            "y": 140,
+            "requirements": "REQ-002"
           }
         },
         {
@@ -35,7 +36,8 @@
           "name": "v_Rejected",
           "properties": {
             "x": 700,
-            "y": 260
+            "y": 260,
+            "requirements": "REQ-003"
           }
         },
         {
@@ -43,7 +45,8 @@
           "name": "v_OrderedFromSupplier",
           "properties": {
             "x": 950,
-            "y": 140
+            "y": 140,
+            "requirements": "REQ-004"
           }
         },
         {
@@ -51,7 +54,8 @@
           "name": "v_DeliveredToStore",
           "properties": {
             "x": 1200,
-            "y": 140
+            "y": 140,
+            "requirements": "REQ-005"
           }
         },
         {
@@ -59,7 +63,8 @@
           "name": "v_PickedUpByCustomer",
           "properties": {
             "x": 1450,
-            "y": 200
+            "y": 200,
+            "requirements": "REQ-006"
           }
         }
       ],

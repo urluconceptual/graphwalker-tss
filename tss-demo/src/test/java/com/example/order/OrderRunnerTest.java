@@ -3,6 +3,8 @@ package com.example.order;
 import org.graphwalker.core.condition.EdgeCoverage;
 import org.graphwalker.core.generator.RandomPath;
 import org.graphwalker.core.model.Edge;
+import org.graphwalker.core.condition.ReachedVertex;
+import org.graphwalker.core.generator.AStarPath;
 import org.graphwalker.java.test.TestBuilder;
 import org.junit.Test;
 
@@ -25,4 +27,15 @@ public class OrderRunnerTest {
                 )
                 .execute();
     }
+    @Test
+    public void runAStarToPickup() {
+        new TestBuilder().addContext(
+                new OrderTest().setNextElement(
+                        new Edge().setName("e_CreateRequest").build()
+                ),
+                Path.of(MODEL_PATH),
+                new AStarPath(new ReachedVertex("v_PickedUpByCustomer"))
+        ).execute();
+    }
+
 }
