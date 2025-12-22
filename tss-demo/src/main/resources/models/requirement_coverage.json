@@ -16,55 +16,55 @@
         {
           "id": "v-request-created",
           "name": "v_RequestCreated",
+          "requirements": ["REQ-001"],
           "properties": {
             "x": 450,
-            "y": 200,
-            "requirements": "REQ-001"
+            "y": 200
           }
         },
         {
           "id": "v-approved",
           "name": "v_Approved",
+          "requirements": ["REQ-002"],
           "properties": {
             "x": 700,
-            "y": 140,
-            "requirements": "REQ-002"
+            "y": 140
           }
         },
         {
           "id": "v-rejected",
           "name": "v_Rejected",
+          "requirements": ["REQ-003"],
           "properties": {
             "x": 700,
-            "y": 260,
-            "requirements": "REQ-003"
+            "y": 260
           }
         },
         {
           "id": "v-ordered-supplier",
           "name": "v_OrderedFromSupplier",
+          "requirements": ["REQ-004"],
           "properties": {
             "x": 950,
-            "y": 140,
-            "requirements": "REQ-004"
+            "y": 140
           }
         },
         {
           "id": "v-delivered-store",
           "name": "v_DeliveredToStore",
+          "requirements": ["REQ-005"],
           "properties": {
             "x": 1200,
-            "y": 140,
-            "requirements": "REQ-005"
+            "y": 140
           }
         },
         {
           "id": "v-picked-up",
           "name": "v_PickedUpByCustomer",
+          "requirements": ["REQ-006"],
           "properties": {
             "x": 1450,
-            "y": 200,
-            "requirements": "REQ-006"
+            "y": 200
           }
         }
       ],
