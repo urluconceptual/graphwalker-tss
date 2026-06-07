@@ -3,7 +3,6 @@
     {
       "id": "model-special-order",
       "name": "SpecialOrderModel",
-      "generator": "random(edge_coverage(100))",
       "startElementId": "v-start",
       "vertices": [
         {
@@ -17,6 +16,7 @@
         {
           "id": "v-request-created",
           "name": "v_RequestCreated",
+          "requirements": ["REQ-001"],
           "properties": {
             "x": 450,
             "y": 200
@@ -25,6 +25,7 @@
         {
           "id": "v-approved",
           "name": "v_Approved",
+          "requirements": ["REQ-002"],
           "properties": {
             "x": 700,
             "y": 140
@@ -33,6 +34,7 @@
         {
           "id": "v-rejected",
           "name": "v_Rejected",
+          "requirements": ["REQ-003"],
           "properties": {
             "x": 700,
             "y": 260
@@ -41,6 +43,7 @@
         {
           "id": "v-ordered-supplier",
           "name": "v_OrderedFromSupplier",
+          "requirements": ["REQ-004"],
           "properties": {
             "x": 950,
             "y": 140
@@ -49,6 +52,7 @@
         {
           "id": "v-delivered-store",
           "name": "v_DeliveredToStore",
+          "requirements": ["REQ-005"],
           "properties": {
             "x": 1200,
             "y": 140
@@ -57,6 +61,7 @@
         {
           "id": "v-picked-up",
           "name": "v_PickedUpByCustomer",
+          "requirements": ["REQ-006"],
           "properties": {
             "x": 1450,
             "y": 200

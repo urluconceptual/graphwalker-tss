@@ -1,16 +1,6 @@
-package org.unibuc;
+package org.unibuc.order;
 
 public class OrderService {
-
-    public enum State {
-        NONE,
-        REQUEST_CREATED,
-        APPROVED,
-        REJECTED,
-        ORDERED_SUPPLIER,
-        DELIVERED_STORE,
-        PICKED_UP
-    }
 
     private State state = State.NONE;
 

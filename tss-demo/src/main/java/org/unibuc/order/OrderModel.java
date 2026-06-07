@@ -1,4 +1,4 @@
-package org.unibuc;
+package org.unibuc.order;
 
 import org.graphwalker.java.annotation.Edge;
 import org.graphwalker.java.annotation.Vertex;
@@ -46,4 +46,7 @@ public interface OrderModel {
 
     @Edge()
     void e_Reset();
+
+    @Edge()
+    void e_ResetRejected();
 }
